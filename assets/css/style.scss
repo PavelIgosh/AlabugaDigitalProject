@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_28pt-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_28pt-SemiBold.ttf);
+    font-weight: 600;
+}
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+input{
+    all: unset;
+}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: #226AF1;
+    border-radius: 12px;
+    color: #fff;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+
+.connect{
+    height: 48px;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    &__block{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+
+    &__text{
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+    }
+
+    &__input{
+        display: flex;
+        border: 1px #fff solid;
+        border-radius: 20px;
+        padding: 4px 12px;
+
+        &-stroke{
+            border: none;
+            background-color: #171717;
+            text-align: center;
+            color: #fff;
+            
+        }
+    }
+
+}
+
+.main{
+    background-color: #262626;
+    margin-bottom: 50px;
+    &__wrap{
+        display: flex;
+        font-family: Montserrat;
+        padding: 55px 0;
+    }
+
+    &__text{
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    &__title{
+        color: #fff;
+        font-weight: 700;
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    &__btn{
+        padding: 17px 70px;
+    }
+}
+
+.header{
+    border-bottom: #858181 1px solid;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__text-box{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: Montserrat;
+        font-size: 19px;
+        font-weight: 400;
+        &-title{
+            font-weight: 700;
+        }
+    }
+
+
+    &__btns{
+        display: flex;
+        gap: 20px;
+        &-login{
+            border: 1px #3A99FF solid;
+            color: #fff;
+            border-radius: 4px;
+            padding: 9px 22px;
+            font-family: Montserrat;
+            font-size: 16px;
+        }
+
+        &-sign-in{
+            padding: 10px 22px;
+            border-radius: 4px;
+        }
+    }
+}
