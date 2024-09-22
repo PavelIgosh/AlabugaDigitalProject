@@ -109,14 +109,12 @@ a{
         display: flex;
         justify-content: center;
         margin-bottom: 15px;
-        &-text{
-            font-family: Roboto;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 129%;
-            text-align: center;
-            color: #fff;
-        }
+        font-family: Roboto;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        text-align: center;
+        color: #fff;
 
     }
 
@@ -155,13 +153,17 @@ a{
         align-items: center;
         gap: 8px;
         border-radius: 8px;
-        &-text{
-            font-family: Roboto;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 129%;
-            color: #080808;
-
+        font-family: Roboto;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        color: #080808;
+        &::before{
+            content: "";
+            display: block;
+            background: url(../img/hr-logo.png);
+            width: 26px;
+            height: 24px;
         }
     }
 }

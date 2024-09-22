@@ -96,8 +96,6 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
-}
-.main__form-btn-text {
   font-family: Roboto;
   font-weight: 600;
   font-size: 14px;
@@ -138,13 +136,18 @@ a {
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-}
-.main__hr-login-text {
   font-family: Roboto;
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
   color: #080808;
+}
+.main__hr-login::before {
+  content: "";
+  display: block;
+  background: url(../img/hr-logo.png);
+  width: 26px;
+  height: 24px;
 }
 
 .footer {
