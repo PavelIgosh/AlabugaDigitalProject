@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 392px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 60px;
+  padding: 18px 16px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__lang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__lang-text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(8, 8, 8, 0.56);
+}
+
+.main__form {
+  margin-top: 86px;
+  margin-bottom: 188px;
+}
+.main__title {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  color: #080808;
+  margin-bottom: 8px;
+}
+.main__acnt-block {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.main__text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(8, 8, 8, 0.56);
+}
+.main__link {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #296ae3;
+}
+.main__form-block {
+  margin-bottom: 30px;
+}
+.main__form-text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #080808;
+  margin-bottom: 8px;
+}
+.main__form-input {
+  padding: 16px 14px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(8, 8, 8, 0.16);
+  background: #fff;
+  border: none;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.main__form-btn {
+  background: #296ae3;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.main__form-btn-text {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #fff;
+}
+.main__form-forgot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.main__form-or-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.main__form-or-text::before {
+  content: "";
+  display: block;
+  width: 168px;
+  height: 2px;
+  background-color: rgba(8, 8, 8, 0.08);
+}
+.main__form-or-text::after {
+  content: "";
+  display: block;
+  width: 168px;
+  height: 2px;
+  background-color: rgba(8, 8, 8, 0.08);
+}
+.main__hr-login {
+  padding: 12px 0;
+  background-color: rgba(8, 8, 8, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+}
+.main__hr-login-text {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: #080808;
+}
+
+.footer {
+  padding: 25px 0;
+}
