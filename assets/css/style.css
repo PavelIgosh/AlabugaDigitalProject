@@ -300,6 +300,7 @@ input {
 .table__digital-block {
   padding-left: 110px;
   background-color: #fff;
+  border-radius: 12px;
 }
 .table__digital-box-title {
   font-family: Inter;
@@ -380,4 +381,132 @@ input {
   background-color: #fff;
   border-radius: 32px;
   padding: 33px 0 11px 24px;
+}
+
+.form__box {
+  padding: 64px 0;
+}
+.form__title {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 117%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.form__sub-title {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  color: rgba(8, 8, 8, 0.56);
+  margin-bottom: 32px;
+}
+.form__input {
+  max-width: 790px;
+  margin: 0 auto;
+}
+.form__input-text {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 8px;
+}
+.form__input-block {
+  border-radius: 12px;
+  width: 788px;
+  height: 48px;
+  box-shadow: inset 0 0 0 1px rgba(8, 8, 8, 0.12);
+  background: rgba(255, 255, 255, 0);
+  padding: 10px 16px;
+  margin-bottom: 32px;
+}
+.form__label {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  all: initial;
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+}
+.form__checkbox-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(8, 8, 8, 0.56);
+}
+.form__btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #262626;
+}
+.footer__logo {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  margin-left: 52px;
+}
+.footer__wrap {
+  margin: 0 50px;
+  display: flex;
+  gap: 240px;
+  padding-bottom: 68px;
+}
+.footer__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.footer__tg {
+  display: flex;
+  align-items: center;
+}
+.footer__icon {
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+  opacity: 70%;
+}
+.footer__link-block {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__hr {
+  width: 1110px;
+  margin: 0 52px;
+}
+.footer__info {
+  margin: 0 52px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__politic {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
