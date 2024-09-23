@@ -6,8 +6,13 @@
   box-sizing: border-box;
 }
 
+body {
+  cursor: default;
+}
+
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .container {
@@ -28,13 +33,21 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.header__lang-text {
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   color: rgba(8, 8, 8, 0.56);
+  transition: transform 0.2s ease;
+}
+.header__lang:hover {
+  transform: scale(1.1);
+}
+.header__lang::before {
+  content: "";
+  background: url(../img/login-btn.png) no-repeat;
+  width: 25px;
+  height: 25px;
 }
 
 .main__form {
@@ -102,6 +115,12 @@ a {
   line-height: 129%;
   text-align: center;
   color: #fff;
+  transition: 0.3s ease, transform 0.2s ease;
+}
+.main__form-btn:hover {
+  background: #1e5bb8;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .main__form-forgot {
   display: flex;
@@ -141,6 +160,7 @@ a {
   font-size: 14px;
   line-height: 129%;
   color: #080808;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .main__hr-login::before {
   content: "";
@@ -148,6 +168,11 @@ a {
   background: url(../img/hr-logo.png);
   width: 26px;
   height: 24px;
+}
+.main__hr-login:hover {
+  background-color: rgba(8, 8, 8, 0.1);
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .footer {

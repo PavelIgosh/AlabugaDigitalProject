@@ -28,10 +28,15 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 input {
   all: unset;
+}
+
+body {
+  cursor: default;
 }
 
 .container {
@@ -47,6 +52,12 @@ input {
   font-size: 16px;
   font-family: Montserrat;
   font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #1B5EB6;
+  transform: scale(1.05);
 }
 
 .connect {
@@ -143,6 +154,12 @@ input {
   padding: 9px 22px;
   font-family: Montserrat;
   font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  cursor: pointer;
+}
+.header__btns-login:hover {
+  background-color: #202020;
+  transform: scale(1.05);
 }
 .header__btns-sign-in {
   padding: 10px 22px;
@@ -288,6 +305,13 @@ input {
 .table__default-block {
   max-width: 410px;
 }
+.table__default-box {
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+.table__default-box:hover {
+  cursor: default;
+  transform: scale(1.05);
+}
 .table__default-box-title {
   font-family: Inter;
   font-weight: 600;
@@ -306,6 +330,13 @@ input {
   padding-left: 110px;
   background-color: #fff;
   border-radius: 12px;
+}
+.table__digital-box {
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+.table__digital-box:hover {
+  cursor: default;
+  transform: scale(1.05);
 }
 .table__digital-box-title {
   font-family: Inter;
@@ -441,6 +472,9 @@ input {
      -moz-appearance: checkbox;
           appearance: checkbox;
 }
+.form__checkbox:hover {
+  cursor: pointer;
+}
 .form__checkbox-text {
   font-family: Montserrat;
   font-weight: 400;
@@ -493,6 +527,12 @@ input {
   line-height: 150%;
   color: #fff;
   opacity: 70%;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.footer__link:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+  opacity: 100%;
 }
 .footer__link-block {
   display: flex;

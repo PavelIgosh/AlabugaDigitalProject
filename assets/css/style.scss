@@ -34,13 +34,16 @@
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 input{
     all: unset;
 }
 
-
+body{
+    cursor: default;
+}
 
 .container{
     max-width: 1200px;
@@ -55,6 +58,12 @@ input{
     font-size: 16px;
     font-family: Montserrat;
     font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s;
+    cursor: pointer;
+    &:hover {
+        background-color: #1B5EB6;
+        transform: scale(1.05);
+    }
 }
 
 
@@ -163,6 +172,12 @@ input{
             padding: 9px 22px;
             font-family: Montserrat;
             font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s;
+            cursor: pointer;
+            &:hover {
+                background-color: #202020;
+                transform: scale(1.05);
+    }
         }
 
         &-sign-in{
@@ -334,6 +349,15 @@ input{
         max-width: 410px;
     }
 
+
+    &__default-box{
+        transition: background-color 0.3s ease, transform 0.2s;
+            &:hover {
+                cursor: default;
+                transform: scale(1.05);
+            }
+    }
+
     &__default-box-title{
         font-family: Inter;
         font-weight: 600;
@@ -354,6 +378,15 @@ input{
         padding-left: 110px;
         background-color: #fff;
         border-radius: 12px;
+    }
+
+    &__digital-box{
+
+        transition: background-color 0.3s ease, transform 0.2s;
+            &:hover {
+                cursor: default;
+                transform: scale(1.05);
+            }
     }
 
     &__digital-box-title{
@@ -496,7 +529,9 @@ input{
             background: rgba(255, 255, 255, 0);
             padding: 10px 16px;
             margin-bottom: 32px;
+            
         }
+       
     }
 
     &__label{
@@ -511,6 +546,9 @@ input{
        height: 20px;
        all: initial;
        appearance: checkbox;
+       &:hover{
+        cursor: pointer;
+       }
        &-text{
         font-family: Montserrat;
         font-weight: 400;
@@ -568,10 +606,18 @@ input{
         line-height: 150%;
         color: #fff;
         opacity: 70%;
+        transition: color 0.3s ease, transform 0.2s ease;
+        &:hover{
+            color: #FFD700;
+            transform: scale(1..05);
+            opacity: 100%;
+            
+        }
         &-block{
             display: flex; 
             flex-direction: column;
             gap: 25px;
+            &:hover{}
         }
         
     }
